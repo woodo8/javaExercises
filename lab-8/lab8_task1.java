@@ -16,63 +16,63 @@ interface Salary {
 }
 
 class Person {
-    String surname;
-    String firstName;
-    String street;
-    String zipCode;
-    String city;
+    String surnameYusufzoda58330;
+    String firstNameYusufzoda58330;
+    String streetYusufzoda58330;
+    String zipCodeYusufzoda58330;
+    String cityYusufzoda58330;
 
     public void initialize() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter surname:");
-        surname = scanner.nextLine();
+        surnameYusufzoda58330 = scanner.nextLine();
         System.out.println("Enter first name:");
-        firstName = scanner.nextLine();
+        firstNameYusufzoda58330 = scanner.nextLine();
         System.out.println("Enter street:");
-        street = scanner.nextLine();
+        streetYusufzoda58330 = scanner.nextLine();
         System.out.println("Enter zip code:");
-        zipCode = scanner.nextLine();
+        zipCodeYusufzoda58330 = scanner.nextLine();
         System.out.println("Enter city:");
-        city = scanner.nextLine();
+        cityYusufzoda58330 = scanner.nextLine();
     }
 
     public void print() {
-        System.out.println("Surname: " + surname);
-        System.out.println("First name: " + firstName);
-        System.out.println("Street: " + street);
-        System.out.println("Zip code: " + zipCode);
-        System.out.println("City: " + city);
+        System.out.println("Surname: " + surnameYusufzoda58330);
+        System.out.println("First name: " + firstNameYusufzoda58330);
+        System.out.println("Street: " + streetYusufzoda58330);
+        System.out.println("Zip code: " + zipCodeYusufzoda58330);
+        System.out.println("City: " + cityYusufzoda58330);
     }
 }
 
 class Staff extends Person implements Salary {
-    String education;
-    String position;
+    String educationYusufzoda58330;
+    String positionYusufzoda58330;
 
-    double hours;
-    double rate;
-    double salary;
+    double hoursYusufzoda58330;
+    double rateYusufzoda58330;
+    double salaryYusufzoda58330;
 
     public void initialize1() {
         initialize();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter education:");
-        education = scanner.nextLine();
+        educationYusufzoda58330 = scanner.nextLine();
         System.out.println("Enter position:");
-        position = scanner.nextLine();
+        positionYusufzoda58330 = scanner.nextLine();
         System.out.println("Enter hours worked:");
-        hours = scanner.nextDouble();
+        hoursYusufzoda58330 = scanner.nextDouble();
         System.out.println("Enter hourly rate:");
-        rate = scanner.nextDouble();
+        rateYusufzoda58330 = scanner.nextDouble();
     }
 
     public void print1() {
         print();
-        System.out.println("Education: " + education);
-        System.out.println("Position: " + position);
-        System.out.println("Hours worked: " + hours);
-        System.out.println("Hourly rate: " + rate);
-        System.out.println("Salary: " + salary);
+        System.out.println("Education: " + educationYusufzoda58330);
+        System.out.println("Position: " + positionYusufzoda58330);
+        System.out.println("Hours worked: " + hoursYusufzoda58330);
+        System.out.println("Hourly rate: " + rateYusufzoda58330);
+        System.out.println("Salary: " + salaryYusufzoda58330);
     }
 
     @Override
@@ -80,7 +80,7 @@ class Staff extends Person implements Salary {
         double overtimeHours = Math.max(hours - 40, 0);
         double overtimePay = salaryForOvertime(overtimeHours, rate);
         double regularPay = (hours - overtimeHours) * rate;
-        return salary = regularPay + overtimePay;
+        return salaryYusufzoda58330 = regularPay + overtimePay;
     }
 }
 
@@ -88,8 +88,9 @@ public class lab8_task1 {
     public static void main(String[] args) {
         Staff staff = new Staff();
         staff.initialize1();
-        staff.salaryToPay(staff.hours, staff.rate);
+        staff.salaryToPay(staff.hoursYusufzoda58330, staff.rateYusufzoda58330);
         staff.print1();
         System.out.println("Should receive bonus: " + Salary.shouldReceiveBonus(5));
     }
 }
+
